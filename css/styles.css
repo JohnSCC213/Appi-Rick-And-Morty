@@ -44,3 +44,42 @@ input[type="text"] {
 .character-info {
     margin-top: 10px;
 }
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header select {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    appearance: none; /* Esto quita el estilo predeterminado del elemento select */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Añade estilos para cuando el elemento select está enfocado */
+header select:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/* Añade estilos para cuando el usuario pasa el ratón sobre el elemento select */
+header select:hover {
+    border-color: #888;
+}
+
+/* Estilos para las opciones dentro del elemento select */
+header select option {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}

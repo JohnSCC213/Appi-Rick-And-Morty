@@ -9,9 +9,16 @@
 <body>
     <header>
         <input type="text" id="searchInput" placeholder="Buscar personaje..." onkeyup="searchCharacter()">
+        <select id="statusFilter" onchange="searchCharacter()">
+            <option value="">Todos</option>
+            <option value="alive">Vivo</option>
+            <option value="dead">Muerto</option>
+            <option value="unknown">Desconocido</option>
+        </select>
     </header>
     <div id="characterContainer" class="character-container"></div>
     
     <script src="./script/script.js"></script>
 </body>
 </html>
+
